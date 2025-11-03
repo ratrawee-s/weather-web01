@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEATHER-WEB01</title>
+    <title>WEATHER2DAY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+<style>
+  .card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 10px;
+  }
+</style>
 <body>
-    <h1>WEATHER-WEB01</h1>
+ <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow" style="background-color: #3498DB;">
+        <div class="container">
+            <a class="navbar-brand" href="#">WEATHER2DAY🌤️</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">สภาพอากาศปัจจุบัน</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">ข้อมูลสภาพอากาศเพิ่มเติม</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">พยากรณ์อากาศล่วงหน้า 5 วัน</a>
+        </li>
+    </div>
+  </div>
+</nav>
+<!------------------------------------------------------------------------------------------------------------------>
+
+<!-- ช่องค้นหา -->
+<section class="container mt-3">
+  <div class="card mx-auto" style="width: 85%;">
+    <div class="card-body py-4">
+      <form class="d-flex">
+      <input class="form-control px-2 w-50" type="search" placeholder="ค้นหาชื่อจังหวัด เช่น (เช่น 'กรุงเทพ', 'เชียงใหม่')" aria-label="Search">
+      <button class="btn btn-success ms-2" type="submit">ค้นหา</button>
+    </form>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------------------------------------------------------------------------>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
